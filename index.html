@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    
-    <div class="todo-card">
-        <div class="innput-group">
-            <input type="text" id 
-        </div>
+
+  <div class="todo-card">
+    <div class="input-group">
+      <input type="text" id="task-input" placeholder="Review Presentation...">
+      <button id="add-btn">Add</button>
     </div>
 
-</body>
+    <div class="counter-text">
+      You have <span id="pending-count">0</span> task(s) to complete
+    </div>
 
+    <ul id="task-list" class="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
