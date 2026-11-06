@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: 3, text: 'Organize Files', completed: false },
     { id: 4, text: 'Write Blog Post', completed: false }
   ];
+
+  // carga tareas desde el almacenamiento local o usa las tareas predeterminadas si no hay datos guardados
   let tasks = loadTasks();
 
   renderTasks();
